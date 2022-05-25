@@ -1,0 +1,92 @@
+  :root{
+    --white: #FFFFFF;
+    --gray: #606060;
+    --black: #000000;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+    padding: 0%;
+    margin: 0%;
+    display: unset;
+  }
+  
+  #main {
+    float: left;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    --bg: var(--white);
+    width: 100%;
+    height: 100%;
+  }
+  
+  h1 {
+    font-size: 220%;
+    text-align: center;
+  }
+  
+  #header {
+    padding: 3% 0;
+    position: sticky;
+    top: 0px;
+    background-color: var(--hdrBg);
+    color: var(--hdrFontColor);
+  }
+
+  .section {
+    padding: 8%;
+  }
+
+  #links a {
+    padding: .7% 2%;
+    display: inline;
+    color: var(--hdrFontColor);
+    text-decoration: none;
+    text-align: center;
+    border: groove 1px var(--hdrFontColor);
+  }
+
+  .links{
+    text-align: center;
+  }
+
+  .light-theme{
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+    --hdrBg: var(--gray);
+    --hdrFontColor: var(--white);
+  }
+  .dark-theme{
+      --bg: var(--black);
+      --fontColor: var(--white);
+      --btnBg: var(--white);
+      --btnFontColor: var(--black);
+      --hdrBg: var(--black);
+      --hdrFontColor: var(--white);
+  }
+
+  .btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--btnBg);
+    color: var(--btnFontColor);
+  }
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;        
+  }
