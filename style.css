@@ -1,6 +1,8 @@
   :root{
     --white: #FFFFFF;
-    --gray: #606060;
+    --lightGray: #808080;
+    --gray: #505050;
+    --darkGray: #202020;
     --black: #000000;
   }
 
@@ -18,12 +20,7 @@
   }
   
   #main {
-    float: left;
-    padding-top: 2%;
-    padding-bottom: 3%;
     --bg: var(--white);
-    width: 100%;
-    height: 100%;
   }
   
   h1 {
@@ -32,28 +29,27 @@
   }
   
   #header {
-    padding: 3% 0;
+    padding: 1.5% 0;
     position: sticky;
     top: 0px;
     background-color: var(--hdrBg);
     color: var(--hdrFontColor);
   }
 
-  .section {
-    padding: 8%;
-  }
-
   #links a {
     padding: .7% 2%;
-    display: inline;
     color: var(--hdrFontColor);
     text-decoration: none;
-    text-align: center;
-    border: groove 1px var(--hdrFontColor);
+    border-radius: 5%;
+    border: solid 1px var(--hdrFontColor);
   }
 
   .links{
     text-align: center;
+  }
+
+  .section {
+    padding: 1% 10% 0;
   }
 
   .light-theme{
@@ -61,15 +57,16 @@
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--white);
-    --hdrBg: var(--gray);
+    --hdrBg: var(--lightGray);
     --hdrFontColor: var(--white);
   }
+  
   .dark-theme{
       --bg: var(--black);
       --fontColor: var(--white);
       --btnBg: var(--white);
       --btnFontColor: var(--black);
-      --hdrBg: var(--black);
+      --hdrBg: var(--darkGray);
       --hdrFontColor: var(--white);
   }
 
@@ -78,15 +75,39 @@
     top: 20px;
     left: 20px;
     height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
+    width: 100px;
+  }
+  
+  .btn > input{
+    appearance: none;
+  }
+  
+  .bar {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30%;
+    border: solid 5px var(--gray);
     background-color: var(--btnBg);
     color: var(--btnFontColor);
+    -webkit-transition: .4s;
+    transition: .4s;
   }
-
-  .fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;        
+  
+  .slider {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    border-radius: 20%;
+    background-color: var(--hdrBg);
+    color: var(--hdrFontColor);
+    text-align: center;
+    line-height: 2.5;
+    -webkit-transition: .4s;
+    transition-duration: .4s;
+    transition: translateX(100%);
   }
