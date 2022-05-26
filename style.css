@@ -8,7 +8,7 @@
 
   html {
     -webkit-text-size-adjust: 100%;
-    --headerSize: 50px;
+    --headerSize: 146px;
     scroll-padding-top: var(--headerSize);
   }
   
