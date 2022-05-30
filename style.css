@@ -54,6 +54,14 @@
     padding: 1% 10% 0;
   }
 
+  a{
+    color: var(--fontColor);
+  }
+
+  a:visited{
+    color: var(--fontColor);
+  }
+
   .light-theme{
     --bg: var(--white);
     --fontColor: var(--black);
