@@ -1,0 +1,25 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "My Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ijl7/personal-site.git"
+  },
+  "keywords": [],
+  "author": "Isaac Lieber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ijl7/personal-site/issues"
+  },
+  "homepage": "https://github.com/ijl7/personal-site#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "npm": "^8.12.1"
+  }
+}
