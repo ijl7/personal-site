@@ -4,11 +4,10 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
-const dirname = "C:\\Users\\isaac\\Documents\\GitHub\\personal-site\\";
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile('index.html', {root: dirname});
+    res.sendFile('C:\\Users\\isaac\\Documents\\GitHub\\personal-site\\index.html');
 });
 
 app.listen(port);
