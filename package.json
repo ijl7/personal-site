@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ijl7/personal-site#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "express-basic-auth": "^1.2.1",
     "npm": "^8.12.1"
   }
 }
