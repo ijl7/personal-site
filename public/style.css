@@ -121,3 +121,9 @@
     transition-duration: .4s;
     transition: translateX(100%);
   }
+
+  .clip{
+    height: 50%;
+    width: 50%;
+  }
+  
