@@ -1,7 +1,8 @@
 const switcher = document.querySelector('.bar');
 
-if(localStorage.getItem('dark-theme') != null){
-    document.body.classList.toggle(localStorage.getItem('dark-theme'));
+if(localStorage.getItem('dark-theme') == "dark-theme"){
+    document.body.classList.toggle('light-theme');
+    document.body.classList.toggle('dark-theme');
 }
 
 switcher.addEventListener('click', function() {
