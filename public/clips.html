@@ -12,8 +12,21 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body class="light-theme" onload="enableDark()">
-    <div class="section">
+    <div id="header">
+        <div>
+            <label id="btn" class="btn">
+                <input type="checkbox">
+                <span class="bar">
+                    <span class="slider">Light</span>
+                </span>
+            </label>
+        </div>
         <h1>Isaac's Clips</h1>
+        <div class="links" id="links">
+            <a href="index.html">Home</a>
+        </div>
+    </div>
+    <div class="section">
         <p>
             When working on password protection, I was originally going to make the website have a password, and a header which said the password 
             directly below. Not very secure, I know. The user could disable Javascript and get right by even if the page hadn't loaded in the background. 
