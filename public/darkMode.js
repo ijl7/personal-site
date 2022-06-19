@@ -1,11 +1,13 @@
 const switcher = document.querySelector('.bar');
-
-if(localStorage.getItem('dark-theme') == "dark-theme"){
-    document.body.classList.toggle('light-theme');
-    document.body.classList.toggle('dark-theme');
+document.body.onload = function(){
+    if(localStorage.getItem('dark-theme') == "dark-theme"){
+        toggleDark();
+    }
 }
 
-switcher.addEventListener('click', function() {
+switcher.addEventListener('click', toggleDark());
+
+function toggleDark() {
     document.body.classList.toggle('light-theme');
     document.body.classList.toggle('dark-theme');
     const className = document.body.className;
@@ -17,4 +19,4 @@ switcher.addEventListener('click', function() {
         document.querySelector(".slider").style.left = "50%";
         document.querySelector('.slider').textContent = "Dark";
     }
-});
+}
