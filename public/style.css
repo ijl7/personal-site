@@ -44,6 +44,7 @@
     text-decoration: none;
     border-radius: 5%;
     border: solid 1px var(--hdrFontColor);
+    display: inline-block;
   }
 
   .links{
