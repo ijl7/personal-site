@@ -13,6 +13,5 @@ app.get('/', (req, res) => {
 });
 router.get('/clips.html', basicAuth({users : {'admin': 'password'}, challenge : true}), (req, res) =>{
     res.sendFile('clips.html', {root :__dirname});
-})
-
+});
 app.listen(port);
