@@ -47,6 +47,10 @@
     display: inline-block;
   }
 
+  #image{
+    size: 10%;
+  }
+  
   .links{
     text-align: center;
   }
