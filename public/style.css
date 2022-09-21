@@ -48,9 +48,10 @@
   }
 
   #image{
-    size: 10%;
+    width: 10%;
+    height: 10%;
   }
-  
+
   .links{
     text-align: center;
   }
