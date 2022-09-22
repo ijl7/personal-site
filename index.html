@@ -17,12 +17,12 @@
             <label id="btn" class="btn">
                 <input type="checkbox">
                 <span class="bar">
-                    <span class="slider">Light</span>
+                    <span id="unselectable" class="slider">Light</span>
                 </span>
             </label>
         </div>
-        <h1>Hello!</h1>
-        <div id = "links" class = "links">
+        <h1 id="unselectable">Hello!</h1>
+        <div id="links" class="links">
                 <a href="#aboutMe">About Me</a>
                 <a href="#siteInfo">Site Info</a>
                 <a href="#projects">Projects</a>
@@ -32,17 +32,22 @@
                 <a href="https://www.linkedin.com/in/isaac-lieber-2a024423a/" target="_blank">LinkedIn</a>
                 <a href="mailto:ijlieber7@gmail.com?subject=The%20Job%20Is%20Yours!">Email</a>
         </div>
-        <img src="media/MeandMaple.jpg"/>
+        <img id="image" class="image" src="media/MeandMaple.jpg"/>
     </div>
     <div id="main">
-        <h1>Welcome To My Personal Site!</h1>
+        <h1 id="unselectable">Welcome To My Personal Site!</h1>
         <hr />
         <div id="aboutMe" class="section">
             <h3>About Me</h3>
             <p>
                 My name is Isaac Lieber and I am a fourth year Computer Science student at The Ohio State University.
-                I plan to graduate in the spring of 2023 with a Bachelors of Science in Computer Science Engineering and minors in Business and Game Design. I chose these minors because 
-                I felt that many of these courses alligned with my goals in my studies, and eventually can help me in the workforce.
+                I plan to graduate in the spring of 2023 with a Bachelors of Science in Computer Science Engineering and minors in Business and Game Design. I chose these minors 
+                because I felt that many of these courses aligned with my goals in my studies, and eventually can help me in the workforce.
+            </p> 
+            <p>
+                In the header above, you can see me with one of my dogs. Don't worry! I am in the passenger seat. Her name is Maple, and she loves to stick her head out of the window.
+                Her and Bear, her older brother, are both Shihpoos. My family is from Solon, Ohio (near Cleveland) - my mom, dad, and 2 younger twin sisters. Many of my other
+                family and friends are from Solon as well, and most of my friends actually go to OSU with me. You should be able to click on the image to switch through and see more.
             </p>
             <p>
                 The main reason why I love to code is that I really enjoy problem-solving and logic puzzles. When I code, I see an issue to solve and 
@@ -73,7 +78,7 @@
                 the site as well. 
             </p>
             <p>
-                When I began building my site, I quickly realized that on one service, all I would be allowed to do was to build a static site. That may be sufficent for 
+                When I began building my site, I quickly realized that on one service, all I would be allowed to do was to build a static site. That may be sufficient for 
                 a site like this that holds a portfolio, but I wanted to do more. I had to install new tools and go to a new provider in order to make the site dynamic.
                 I felt as if this was a necessary part of my development in web programming, since many sites nowadays use dynamic sites in order to customize things 
                 like ads based on who is visiting the site.
@@ -81,7 +86,7 @@
             <p>
                 I then purchased a domain name and generated a CNAME record for my newly purchased domain on the service. This is logged to ensure that I own the domain.
                 Finally, I took extra steps to make sure my website was secure. I generated a SSL certificate to make sure that all traffic was protected from attacks.
-                This Transpory Layer Security allows for peace of mind when browsing through my site, even though I may not be peddling any goods besides my hard work.
+                This Transport Layer Security allows for peace of mind when browsing through my site, even though I may not be peddling any goods besides my hard work.
             </p>
             <p>
                 Now, you might be wondering why the site has a password-protected section. The idea for this began when my friends (the Double Take Video ones) told me that I could help them 
@@ -106,5 +111,6 @@
     
     <script src="darkMode.js" defer></script>
     <script src="enableDark.js" defer></script>
+    <script src="imageSwitcher.js" defer></script>
 </body>
 </html>

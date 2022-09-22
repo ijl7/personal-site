@@ -45,6 +45,7 @@
     border-radius: 5%;
     border: solid 1px var(--hdrFontColor);
     display: inline-block;
+    margin-top: 5px;
   }
 
   #header img{
