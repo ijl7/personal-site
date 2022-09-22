@@ -1,7 +1,7 @@
-const switcher = document.querySelector('.image');
-const myImages = ["Maple.jpg", "Easter.jpg", "Friends.jpg", "Dinner.jpg"];
+const picture = document.querySelector('.image');
+const myImages = ["media/Maple.jpg", "media/Easter.jpg", "media/Friends.jpg", "media/Dinner.jpg"];
 const i = 0;
-switcher.addEventListener('click', function() {
+picture.addEventListener('click', function() {
     var image = document.getElementById('image');
     if(i < myImages.length)
         i++;
