@@ -3,7 +3,7 @@ const myImages = ["media/Maple.jpg", "media/Easter.jpg", "media/Friends.jpg", "m
 var i = 0;
 picture.addEventListener('click', function() {
     var image = document.getElementById('image');
-    if(i < myImages.length)
+    if(i < myImages.length - 1)
         i++;
     else
         i = 0;
