@@ -8,13 +8,7 @@ picture.addEventListener('click', function() {
         i++;
     else
         i = 0;
-    while(opacity > 0){
-        opacity -= .01;
-        image.style = "opacity: " + opacity;
-    }
-    image.src = myImages[i];
-    while(opacity < 1){
-        opacity += .01;
-        image.style = "opacity: " + opacity;
-    }
+    image.classList.remove = opacity;
+    setTimeout(() => {image.src = myImages[i];}, 1000);
+    setTimeout(() => {image.classList.add = opacity;}, 2000);
 });
