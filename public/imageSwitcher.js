@@ -7,7 +7,7 @@ picture.addEventListener('click', function() {
         i++;
     else
         i = 0;
-    picture.classList.remove = opacity;
+    picture.classList.remove("opaque");
     setTimeout(() => {picture.src = myImages[i];}, 1000);
-    setTimeout(() => {picture.classList.add = opacity;}, 2000);
+    setTimeout(() => {picture.classList.add("opaque");}, 2000);
 });
